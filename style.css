@@ -36,6 +36,8 @@ header .profile-photo{
     height: auto;
     justify-self: flex-start;
     border-radius: 50%;
+    border: 2px solid var(--white);
+    box-shadow: rgba(0, 0, 0, 0.36);
 }
 .header-details-container{
     width: 100%;
