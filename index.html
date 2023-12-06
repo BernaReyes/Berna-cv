@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bernardo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/tablet.css">
-
-    <script src="sect_change.js"></script>
+    <link media="(min-width: 320px)" rel="stylesheet" href="style.css">
+    <link media="(min-width: 760px)" rel="stylesheet" href="css/tablet.css">
+    <link media="(min-width: 1024px)" rel="stylesheet" href="css/laptop.css">
 </head>
 <body>
+   <section class="super-container">
     <header>
         <div class="">
             <img class="profile-photo" src="https://b2472105.smushcdn.com/2472105/wp-content/uploads/2023/01/Perfil-Profesional-_63-819x1024.jpg?lossy=1&strip=1&webp=1" alt="foto de perfil">
@@ -20,10 +20,10 @@
             </div>
         </div>
         <ul class="header-social-container">
-            <li><a href="#">Linkedin</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Github</a></li>
-            <li><a href="#">Behance</a></li>
+            <li><a href="https://www.linkedin.com/in/reyes-bernardo/" target="_blank">Linkedin</a></li>
+            <!--<li><a href="">Instagram</a></li>-->
+            <li><a href="https://github.com/BernaReyes" target="_blank">Github</a></li>
+            <li><a href="https://www.behance.net/bernardoreyes4" target="_blank">Behance</a></li>
         </ul>
     </header>
 
@@ -68,53 +68,56 @@
         </section>
         <section id="profesional" class="professional-info-container">
             <h2>Experiencia Profesional</h2>
-            <div class="profesional-info--card">
-                <h3>Alex Internet</h3>
-                <p>2010 - 2020</p>
-                <ul class="card--info">
-                    <li>Atención al cliente.</li>
-                    <li>Mantenimiento de equipos de computo.</li>
-                    <li>Actividades de oficina.</li>
-                </ul>
+            <div class="profesional-card-container">
+                <div class="profesional-info--card">
+                    <h3>Alex Internet</h3>
+                    <p>2010 - 2020</p>
+                    <ul class="card--info">
+                        <li>Atención al cliente.</li>
+                        <li>Mantenimiento de equipos de computo.</li>
+                        <li>Actividades de oficina.</li>
+                    </ul>
+                </div>
+                <div class="profesional-info--card">
+                    <h3>Mundo Magico</h3>
+                    <p>2020 - 2023</p>
+                    <ul class="card--info">
+                        <li>Edición fotografica, realizar vectores.</li>
+                        <li>Preparación de diseños para impresion</li>
+                        <li>Publicidad en redes sociales</li>
+                    </ul>
+                </div>
+                <div class="profesional-info--card">
+                    <h3>ICABA</h3>
+                    <p>2022 - Actualmente</p>
+                    <ul class="card--info">
+                        <li>Profesor de informática y Bases del diseño.</li>
+                        <li>Diseño Publicidad en redes sociales.</li>
+                        <li>Toma y edicion de fotografia.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="profesional-info--card">
-                <h3>Mundo Magico</h3>
-                <p>2020 - 2023</p>
-                <ul class="card--info">
-                    <li>Edición fotografica, realizar vectores.</li>
-                    <li>Preparación de diseños para impresion</li>
-                    <li>Publicidad en redes sociales</li>
-                </ul>
-            </div>
-            <div class="profesional-info--card">
-                <h3>ICABA</h3>
-                <p>2022 - Actualmente</p>
-                <ul class="card--info">
-                    <li>Profesor de informática y Bases del diseño.</li>
-                    <li>Diseño Publicidad en redes sociales.</li>
-                    <li>Toma y edicion de fotografia.</li>
-                </ul>
-            </div>
-
         </section>
         <section id="academic" class="academic-info-container">
             <h2>Historial Academico</h2>
-            <div class="academic-info--card">
-                <h3>UG -  DIVISION DE INGENIERIAS</h3>
-                <p>2015 - 2017</p>
-                <ul class="card--info">
-                    <li>INGENIERIA EN SISTEMAS COMPUTACIONALES</li>
-                    <li>-NO CONCLUIDA-</li>
-                </ul>
-            </div>
-            <div class="academic-info--card">
-                <h3>UNIVA - LA PIEDAD</h3>
-                <p>2018 - 2021</p>
-                <ul class="card--info">
-                    <li>LICENCIATURA EN ANIMACIÓN, ARTE DIGITAL Y MULTIMEDIA</li>
-                    <li>-TITULADO-</li>
-                    <li>-CEDULA PROFESIONAL-</li>
-                </ul>
+            <div class="academic-card-container">
+                <div class="academic-info--card">
+                    <h3>UG -  DIVISION DE INGENIERIAS</h3>
+                    <p>2015 - 2017</p>
+                    <ul class="card--info">
+                        <li>INGENIERIA EN SISTEMAS COMPUTACIONALES</li>
+                        <li>-NO CONCLUIDA-</li>
+                    </ul>
+                </div>
+                <div class="academic-info--card">
+                    <h3>UNIVA - LA PIEDAD</h3>
+                    <p>2018 - 2021</p>
+                    <ul class="card--info">
+                        <li>LICENCIATURA EN ANIMACIÓN, ARTE DIGITAL Y MULTIMEDIA</li>
+                        <li>-TITULADO-</li>
+                        <li>-CEDULA PROFESIONAL-</li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section id="software" class="main-software-container">
@@ -163,10 +166,13 @@
         <button onclick="mostrarSeccion('academic')"><img src="images/book-solid.svg" alt=""></button>
         <button onclick="mostrarSeccion('software')"><img src="images/computer-solid.svg" alt=""></button>
     </section>
+   </section>
     <footer>
-
+        <a class="portfolio-link" href="#" onclick="mostrarAlert()"><p>Ver Portafolio</p><span></span></a>
     </footer>
 
-
+    <!--***************SCRIPT*******************-->
+    <script src="js/sect_change.js"></script>
+    <script src="js/alert.js"></script>
 </body>
 </html>

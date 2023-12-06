@@ -13,6 +13,10 @@ html{
     font-size: 62.5%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+/*****************************************************/
+.super-container{
+    transition: transform 3s;
+}
 /********************************************************/
 header{
     width: 100%;
@@ -20,7 +24,7 @@ header{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -28,7 +32,7 @@ header{
 }
 header .profile-photo{
     width: 100%;
-    max-width: 80px;
+    max-width: 60px;
     height: auto;
     justify-self: flex-start;
     border-radius: 50%;
@@ -42,11 +46,11 @@ header .profile-photo{
     margin-bottom: 5px;
 }
 .header-details-container h3{
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 5px;
 }
 .header-details-container p{
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin-bottom: 15px;
 }
 .header-social-container{
@@ -59,9 +63,12 @@ header .profile-photo{
     list-style: none;
 }
 .header-social-container a{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: var(--purple);
+}
+.header-social-container a:hover{
+    text-decoration: underline;
 }
 /*********************************************************************/
 main{
@@ -86,6 +93,7 @@ main{
     min-width: 320px;
 }
 .main-personal-info-container h2{
+    font-size: 2.6rem;
     margin: 15px auto;
     text-align: center;
 }
@@ -116,7 +124,6 @@ main{
     list-style: none;
     text-align: center;
 }
-
 .personal-info--contacto{
     list-style: none;
     display: flex;
@@ -136,6 +143,9 @@ main{
 .professional-info-container h2{
     margin: 15px auto;
     text-align: center;
+}
+.profesional-card-container{
+    width: 100%;
 }
 .profesional-info--card{
     max-width: 288px;
@@ -158,6 +168,9 @@ main{
 .profesional-info--card h3{
     width: 100%;
 }
+.profesional-info--card p{
+    width: 100%;
+}
 .card--info{
     text-align: left;
 }
@@ -165,11 +178,6 @@ main{
 .academic-info-container{
     width: 100%;
     min-width: 320px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .academic-info-container h2{
     margin: 15px auto;
@@ -241,14 +249,34 @@ main{
     border: 1px solid var(--black);
     border-radius: 50%;
     background-color: var(--white);
+    transition: background-color 1s;
 }
 button:hover{
     background-color: var(--grey);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.56);
 }
 
 /****************************************************/
 footer{
     width: 100%;
-    height: 3vh;
+    height: auto;
     background-color: var(--black);
+    padding: 10px;
+}
+.portfolio-link{
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    color: var(--white);
+}
+.portfolio-link:hover{
+    background-color: var(--grey);
+}
+.portfolio-link p{
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid var(--white);
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.56);
 }

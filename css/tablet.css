@@ -1,0 +1,79 @@
+header .profile-photo{
+    max-width: 80px;
+}
+.header-details-container h1{
+    font-size: 2.6rem;
+}
+.header-details-container h3{
+    font-size: 2rem;
+}
+.header-details-container p{
+    font-size: 1.6rem;
+}
+.header-social-container a{
+    font-size: 1.4rem;
+}
+/**************************************/
+.main-personal-info-container h2{
+    font-size: 2.8rem;
+}
+.personal-info h2{
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+}
+.personal-info p, table, .skills-table{
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+.personal-info--contacto a{
+    font-size: 1.8rem;
+}
+/*******************************************/
+.profesional-card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.profesional-info--card{
+    max-width: 360px;
+    height: 180px;
+    margin: 10px auto;
+}
+.profesional-info--card h3{
+    font-size: 2.4rem;
+}
+.profesional-info--card p{
+    font-size: 1.8rem;
+}
+.card--info{
+    font-size: 1.6rem;
+}
+/***********************************************/
+.academic-card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.academic-info--card{
+    max-width: 360px;
+    height: 180px;
+    margin: 10px auto;
+}
+.academic-info--card h3{
+    font-size: 2.4rem;
+}
+.academic-info--card p{
+    font-size: 1.8rem;
+}
+.academic-info--card .card--info{
+    font-size: 1.6rem;
+}
+/**********************************/
+.main-software-container{
+    width: 80%;
+    margin: 0 auto;
+}
