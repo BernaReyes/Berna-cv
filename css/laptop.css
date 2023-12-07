@@ -50,12 +50,6 @@ main{
     align-items: center;
     overflow: hidden;
 }
-#academic{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .popup{
     top: 60%;
     left: 60%;
